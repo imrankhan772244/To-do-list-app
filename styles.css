@@ -1,0 +1,254 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+#container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* main outer section */
+.todo {
+  margin: auto;
+  border: 1px solid gray;
+  width: 50%;
+  height: 90vh;
+  border-radius: 5px;
+}
+
+.name_sec {
+  display: flex;
+}
+
+/* add button */
+.add_task_btn {
+  width: 100px;
+  padding: 0;
+  height: 48px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #0079bf;
+  color: #fff;
+  margin-left: 5px;
+  font-size: medium;
+}
+.add_task_btn:hover {
+  background: #66a9d0;
+  cursor: pointer;
+}
+
+
+/* top heading */
+h1 {
+  margin: 10px;
+  text-align: center;
+}
+
+/* tasks section */
+.tasks_sec {
+  height: 60vh;
+  margin: 10px auto;
+  overflow-y: scroll;
+}
+/* Style the scrollbar track */
+.tasks_sec::-webkit-scrollbar {
+  width: 5px; /* You can adjust the width as needed */
+}
+
+/* Style the scrollbar thumb */
+.tasks_sec::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the thumb */
+  border-radius: 6px; /* Rounded corners of the thumb */
+}
+
+/* Style the scrollbar track on hover */
+.tasks_sec::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Hover color of the thumb */
+}
+
+/* Style the scrollbar track */
+.tasks_sec::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Color of the track */
+}
+
+/* style complete all button */
+.complete_all {
+  float: right;
+  cursor: pointer;
+  color: #888;
+}
+.complete_all i {
+  margin-right: 5px;
+  color: #888;
+}
+
+/*  */
+.complete_all:hover {
+  color: black;
+}
+
+/* class for ul */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  /* border: 1px solid #e5e5e5; */
+}
+
+/* class for li classes */
+ul li {
+  padding: 10px;
+  /* padding-left: 0; */
+  display: flex;
+  justify-content: space-between;
+  align-items: inherit;
+  align-items: center;
+}
+
+/* hover class for li:hover */
+ul li:hover {
+  background: #f3f3f3;
+}
+
+/* class for list input */
+#list input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+/* list label  */
+#list label {
+  position: relative;
+  cursor: pointer;
+}
+
+/* checked list input after */
+#list label:before {
+  content: "";
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid #0079bf;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* checked list input lable after */
+#list input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* checked list input before */
+#list input:checked + label:before {
+  background: #0079bf;
+}
+/* checked list input  */
+#list input:checked + label {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* delete icon classs */
+.delete {
+  height: 28px;
+  padding: 5px 0px;
+  border-radius: 3px;
+}
+/* delete hover class */
+.delete:hover {
+  background: #f2f2f2;
+  cursor: pointer;
+}
+
+/* task addition */
+.add-task {
+  width: 100%;
+  outline: none;
+  font-size: 15px;
+  padding: 11px;
+  border: 1px solid black;
+  margin-bottom: 3px;
+  border-radius: 5px;
+}
+
+/* total tasks
+ */
+#total-tasks {
+  margin-bottom: 20px;
+  font-size: 13px;
+  margin-left: 2px;
+  color: gray;
+}
+
+/* clear button */
+.clear_btn {
+  float: right;
+  height: 30px;
+  width: 90px;
+  border: none;
+  outline: none;
+  background: #0079bf;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 30px;
+  font-size: medium;
+}
+
+.clear_btn:hover {
+  background: #66a9d0;
+}
+
+/* common btn class */
+.btn {
+  height: 30px;
+  background: #0079bf;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 30px;
+  font-size: medium;
+}
+/* common btn hover class */
+.btn:hover {
+  background: #66a9d0;
+}
+.all{
+  width: 50px;
+}
+.btns{
+  margin: 20px 0;
+}
+
+
+/* clear completed btn */
+.clear_completed{
+margin-left: 90px;
+color: #888;
+cursor: pointer;
+}
+.clear_completed:hover{
+  color: black;
+  font-size: medium;
+}
